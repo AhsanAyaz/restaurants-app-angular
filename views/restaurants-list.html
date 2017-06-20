@@ -1,0 +1,47 @@
+<!-- TODO : Remove the below navbar, we'll have only one navbar-->
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="home">Restaurants-App</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a ui-sref="restaurants">Restaurants</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container" id="restListPage">
+
+    <h3 class="text-center page-heading">Restaurants List</h3>
+    <div class="text-center" ng-show="restListCtrl.showLoader == true">
+        LOADING.....
+    </div>
+    <div class="page-content">
+        <div class="restaurants-list row">
+            <div class="col-sm-6 col-md-4 col-lg-3 restaurant-item-outer" ng-repeat="rest in restListCtrl.restaurants">
+                <div class="restaurant-item">
+                    <div class="rest-image-container">
+                        <img class="img image-responsive" ng-src="{{rest.image_url}}" alt="...">
+                    </div>
+                    <div class="rest-details-container">
+                        <a class="heading-container text-center" ui-sref="home">
+                            <h4>{{rest.name}}</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

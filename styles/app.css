@@ -1,0 +1,16 @@
+
+
+.container{
+    padding-top: 20px;
+    text-align: center;
+}
+.page-heading{
+    margin: 20px auto;
+}
+.page-content{
+    padding-top: 20px;
+}
+.done-true {
+    text-decoration: line-through;
+    color: grey;
+}
