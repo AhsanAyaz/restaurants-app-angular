@@ -31,7 +31,7 @@
     <div class="page-content">
         <div class="restaurants-list row">
             <div class="col-sm-6 col-md-4 col-lg-3 restaurant-item-outer" ng-repeat="rest in restListCtrl.restaurants">
-                <div class="restaurant-item">
+                <div class="restaurant-item" ng-click="restListCtrl.onRestClick(rest)">
                     <div class="rest-image-container">
                         <img class="img image-responsive" ng-src="{{rest.image_url}}" alt="...">
                     </div>

@@ -10,7 +10,15 @@
 
         restListCtrl.showLoader = false;
 
+        restListCtrl.onRestClick = function(restaurant){
+             console.log(restaurant);
+        }
+
         function onInit(){
+            fetchAllRestaurants();        
+        }
+
+        function fetchAllRestaurants(){
             // show loader
             restListCtrl.showLoader = true;
             // get restaurants from the service
