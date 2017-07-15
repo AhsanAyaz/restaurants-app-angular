@@ -11,8 +11,11 @@ var restaurantSeedData = require('./restaurants-seed-data');
 
 Restaurant.find({}).remove()
       .then(function() {
-        let restaurants = Restaurant.create(restaurantSeedData);
-        return restaurants;
+        return Restaurant.create(restaurantSeedData);
       })
-      .then(() => console.log('finished populating restaurants'))
-      .catch(err => console.log('error populating restaurants', err));    
+      .then(function(){
+        console.log('finished populating restaurants');
+      })
+      .catch(function(err) {
+        console.log('error populating restaurants', err);
+      });    

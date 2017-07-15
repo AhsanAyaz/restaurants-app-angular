@@ -4,24 +4,38 @@
         <title>Restaurants App</title>
         <link href="styles/bootstrap.min.css" rel="stylesheet">
         <link href="styles/app.css" rel="stylesheet">
+        <link href="app/pages/admin/admin.css" rel="stylesheet">
+
         <link href="styles/restaurants-list.css" rel="stylesheet">
     </head>
     <body>
-        <ui-view></ui-view>
+        
+        <app></app>
 
         <!-- VENDORS -->
-        <script src="scripts/vendors/angular.min.js" type="text/javascript"></script>
-        <script src="scripts/vendors/angular-ui-router.min.js" type="text/javascript"></script>
+        <script src="bower_components/angular/angular.min.js" type="text/javascript"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js" type="text/javascript"></script>
+        <script src="vendors/ui-bootstrap/ui-bootstrap.min.js"></script>
         <!-- APP AND CONFIG -->
-        <script src="app.js" type="text/javascript"></script>
-        <script src="config.js" type="text/javascript"></script>
+        <script src="app/app.module.js" type="text/javascript"></script>
+        <script src="app/app.config.js" type="text/javascript"></script>
 
         <!-- CONSTANTS -->
-        <script src="scripts/constants/app.constants.js" type="text/javascript"></script>
+        <script src="app/constants/app.constants.js" type="text/javascript"></script>
         <!-- CONTROLLERS -->
-        <script src="scripts/controllers/RestaurantsListController.js" type="text/javascript"></script>
-        <script src="scripts/controllers/HomeController.js" type="text/javascript"></script>
+        <script src="app/pages/restaurants-list/restaurants-list.controller.js" type="text/javascript"></script>
+        <script src="app/pages/home/home.controller.js" type="text/javascript"></script>
+        <script src="app/pages/admin/admin.controller.js" type="text/javascript"></script>
+
+
+        <!-- COMPONENTS -->
+        <script src="app/app.component.js" type="text/javascript"></script>
+        <script src="app/components/nav-bar/nav-bar.component.js" type="text/javascript"></script>
+        <script src="app/components/restaurant-item/restaurant-item.component.js" type="text/javascript"></script>
+        <script src="app/components/add-restaurant-modal/add-restaurant-modal.component.js" type="text/javascript"></script>
+
+
         <!-- SERVICES -->
-        <script src="scripts/services/RestaurantService.js" type="text/javascript"></script>
+        <script src="app/services/RestaurantService.js" type="text/javascript"></script>
     </body>    
 </html>
