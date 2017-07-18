@@ -1,0 +1,13 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Add new restaurant!</h3>
+</div>
+<div class="modal-body" id="modal-body">
+   <div class="form-group">
+    <label for="restName">Restaurant Name</label>
+    <input type="text" ng-model="$ctrl.newRestaurant.name" class="form-control" id="restName" placeholder="Enter restaurant name">
+  </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
+    <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+</div>

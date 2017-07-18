@@ -1,0 +1,10 @@
+
+<div class="container" id="adminPage">
+
+    <h3 class="text-center page-heading">Admin</h3>
+    <button class="btn btn-info btn-lg add-rest-btn" ng-click="adminCtrl.addNewRestaurant()">+</button>
+    <ul class="media-list restaurants-list">
+        <restaurant-item item="restaurant" ng-repeat="restaurant in adminCtrl.restaurants"></restaurant-item>
+    </ul>
+   
+</div>

@@ -1,0 +1,14 @@
+<li class="media restaurant-item">
+    <div class="media-left">
+        <a>
+            <img class="media-object" ng-src="{{$ctrl.item.image_url}}" alt="...">
+        </a>
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">{{$ctrl.item.name}}</h4>
+    
+    </div>
+    <div class="actions-container">
+        <button class="btn btn-sm btn-danger" ng-click="$ctrl.remove()">x</button>
+    </div>
+</li>

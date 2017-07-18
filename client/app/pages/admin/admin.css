@@ -1,0 +1,30 @@
+#adminPage{
+
+}
+
+#adminPage .restaurants-list{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#adminPage .restaurants-list .restaurant-item {
+    position: relative;
+}
+
+#adminPage .restaurants-list .restaurant-item .media-left img{
+    height: 100px;
+    width: 100px;
+}
+
+
+#adminPage .restaurants-list .restaurant-item .actions-container{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#adminPage .add-rest-btn{
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+}
